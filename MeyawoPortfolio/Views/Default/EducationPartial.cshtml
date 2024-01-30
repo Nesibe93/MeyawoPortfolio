@@ -1,0 +1,41 @@
+﻿@model List<MeyawoPortfolio.Models.TblEducation>
+
+<section class="section" id="education">
+    <!-- container -->
+    <div class="container text-center">
+        <!-- about wrapper -->
+        <div class="education">
+            <div class="col-lg-12">
+                <p class="section-subtitle">Neler gördüm?</p>
+                <h2 class="section-title">Eğitim Hayatım</h2>
+                <br />
+                <div class="col-lg-8">
+                    @foreach (var item in Model)
+                    {
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">@item.Degree</h3>
+                                <div class="subheading mb-1">@item.UniversityName</div>
+                                <div>@item.DepartmentName</div>
+                                <p>GPA: @item.GPA</p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">@item.GraduationDate</span></div>
+                        </div>
+                    }
+                    @*<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Ön Lisans</h3>
+                            <div class="subheading mb-1">Kastamonu Üniversitesi</div>
+                            <div>Bilgisayar Programcılığı</div>
+                            <p>GPA: 2.78</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">17.06.2013</span></div>
+                    </div>*@
+
+                </div>
+
+            </div>
+        </div><!-- end of about wrapper -->
+    </div><!-- end of container -->
+</section>
+

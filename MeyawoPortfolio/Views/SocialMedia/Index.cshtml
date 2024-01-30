@@ -1,0 +1,30 @@
+﻿@model List<MeyawoPortfolio.Models.TblSocialMedia>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Sosyal Medya Listesi</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Proje ID</th>
+        <th>Proje Başlığı</th>
+        <th>Proje Kategorisi</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+        <th>Github Linki</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProjectID</td>
+            <td>@item.Title</td>
+            <td>@item.ProjectCategory</td>
+            <td><a href="#" class="btn btn-danger">Sil</a></td>
+            <td><a href="#" class="btn btn-success">Güncelle</a></td>
+            <td><a href="#" class="btn btn-dark">Github'ta Aç</a></td>
+        </tr>
+    }
+</table>
+<a href="/Project/CreateProject/" class="btn btn-primary">Yeni Proje Girişi</a>
+
