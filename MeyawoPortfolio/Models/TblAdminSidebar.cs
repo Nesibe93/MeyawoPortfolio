@@ -12,11 +12,11 @@ namespace MeyawoPortfolio.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class TblSocialMedia
+    public partial class TblAdminSidebar
     {
-        public int SocialMediaID { get; set; }
-        public string Title { get; set; }
-        public string SocialMediaLink { get; set; }
-        public string Icon { get; set; }
+        public int AdminSidebarId { get; set; }
+        public string SidebarTitle { get; set; }
+        public string CoverImageURL { get; set; }
+        public string ProfileImageURL { get; set; }
     }
 }

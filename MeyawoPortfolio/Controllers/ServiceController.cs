@@ -21,9 +21,32 @@ namespace MeyawoPortfolio.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult CreateService(TblService p) 
+        public ActionResult CreateService(TblService p)
         {
             db.TblService.Add(p);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public ActionResult DeleteService(int id)
+        {
+            var value = db.TblService.Find(id);
+            db.TblService.Remove(value);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public ActionResult UpdateService(int id)
+        {
+            var value = db.TblService.Find(id);
+            return View(value);
+        }
+        [HttpPost]
+        public ActionResult UpdateService(TblService p)
+        {
+            var value = db.TblService.Find(p.ServiceID);
+            value.Title = p.Title;
+            value.Description = p.Description;
+            value.ImageURL = p.ImageURL;
             db.SaveChanges();
             return RedirectToAction("Index");
         }

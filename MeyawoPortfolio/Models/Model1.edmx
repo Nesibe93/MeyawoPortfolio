@@ -25,6 +25,15 @@
           <Property Name="Description" Type="nvarchar(max)" />
           <Property Name="ImageURL" Type="nvarchar" MaxLength="250" />
         </EntityType>
+        <EntityType Name="TblAdminSidebar">
+          <Key>
+            <PropertyRef Name="AdminSidebarId" />
+          </Key>
+          <Property Name="AdminSidebarId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SidebarTitle" Type="nvarchar" MaxLength="50" />
+          <Property Name="CoverImageURL" Type="nvarchar" MaxLength="250" />
+          <Property Name="ProfileImageURL" Type="nvarchar" MaxLength="250" />
+        </EntityType>
         <EntityType Name="TblCategory">
           <Key>
             <PropertyRef Name="CategoryID" />
@@ -86,9 +95,9 @@
         </EntityType>
         <EntityType Name="TblSocialMedia">
           <Key>
-            <PropertyRef Name="SocialMedia" />
+            <PropertyRef Name="SocialMediaID" />
           </Key>
-          <Property Name="SocialMedia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SocialMediaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Title" Type="nvarchar" MaxLength="50" />
           <Property Name="SocialMediaLink" Type="nvarchar" MaxLength="100" />
           <Property Name="Icon" Type="nvarchar" MaxLength="100" />
@@ -118,6 +127,7 @@
         <EntityContainer Name="DbMyPortfolioModelStoreContainer">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblAbout" EntityType="Self.TblAbout" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblAdminSidebar" EntityType="Self.TblAdminSidebar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblCategory" EntityType="Self.TblCategory" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblContact" EntityType="Self.TblContact" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblEducation" EntityType="Self.TblEducation" Schema="dbo" store:Type="Tables" />
@@ -205,15 +215,6 @@
           <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="ImageURL" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityType Name="TblSocialMedia">
-          <Key>
-            <PropertyRef Name="SocialMedia" />
-          </Key>
-          <Property Name="SocialMedia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="SocialMediaLink" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="Icon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-        </EntityType>
         <EntityType Name="TblTestimonial">
           <Key>
             <PropertyRef Name="TestimonialID" />
@@ -244,13 +245,14 @@
           <EntitySet Name="TblFuture" EntityType="Self.TblFuture" />
           <EntitySet Name="TblProject" EntityType="Self.TblProject" />
           <EntitySet Name="TblService" EntityType="Self.TblService" />
-          <EntitySet Name="TblSocialMedia" EntityType="Self.TblSocialMedia" />
           <EntitySet Name="TblTestimonial" EntityType="Self.TblTestimonial" />
           <AssociationSet Name="FK_TblProject_TblCategory" Association="Self.FK_TblProject_TblCategory">
             <End Role="TblCategory" EntitySet="TblCategory" />
             <End Role="TblProject" EntitySet="TblProject" />
           </AssociationSet>
           <EntitySet Name="TblEducation" EntityType="DbMyPortfolioModel.TblEducation" />
+          <EntitySet Name="TblAdminSidebar" EntityType="DbMyPortfolioModel.TblAdminSidebar" />
+          <EntitySet Name="TblSocialMedia" EntityType="DbMyPortfolioModel.TblSocialMedia" />
         </EntityContainer>
         <EntityType Name="TblEducation">
           <Key>
@@ -262,6 +264,24 @@
           <Property Name="DepartmentName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="GPA" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
           <Property Name="GraduationDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TblAdminSidebar">
+          <Key>
+            <PropertyRef Name="AdminSidebarId" />
+          </Key>
+          <Property Name="AdminSidebarId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SidebarTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CoverImageURL" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="ProfileImageURL" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TblSocialMedia">
+          <Key>
+            <PropertyRef Name="SocialMediaID" />
+          </Key>
+          <Property Name="SocialMediaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SocialMediaLink" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Icon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -344,16 +364,6 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="TblSocialMedia">
-            <EntityTypeMapping TypeName="DbMyPortfolioModel.TblSocialMedia">
-              <MappingFragment StoreEntitySet="TblSocialMedia">
-                <ScalarProperty Name="SocialMedia" ColumnName="SocialMedia" />
-                <ScalarProperty Name="Title" ColumnName="Title" />
-                <ScalarProperty Name="SocialMediaLink" ColumnName="SocialMediaLink" />
-                <ScalarProperty Name="Icon" ColumnName="Icon" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="TblTestimonial">
             <EntityTypeMapping TypeName="DbMyPortfolioModel.TblTestimonial">
               <MappingFragment StoreEntitySet="TblTestimonial">
@@ -374,6 +384,26 @@
                 <ScalarProperty Name="UniversityName" ColumnName="UniversityName" />
                 <ScalarProperty Name="Degree" ColumnName="Degree" />
                 <ScalarProperty Name="EducationID" ColumnName="EducationID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblAdminSidebar">
+            <EntityTypeMapping TypeName="DbMyPortfolioModel.TblAdminSidebar">
+              <MappingFragment StoreEntitySet="TblAdminSidebar">
+                <ScalarProperty Name="ProfileImageURL" ColumnName="ProfileImageURL" />
+                <ScalarProperty Name="CoverImageURL" ColumnName="CoverImageURL" />
+                <ScalarProperty Name="SidebarTitle" ColumnName="SidebarTitle" />
+                <ScalarProperty Name="AdminSidebarId" ColumnName="AdminSidebarId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblSocialMedia">
+            <EntityTypeMapping TypeName="DbMyPortfolioModel.TblSocialMedia">
+              <MappingFragment StoreEntitySet="TblSocialMedia">
+                <ScalarProperty Name="Icon" ColumnName="Icon" />
+                <ScalarProperty Name="SocialMediaLink" ColumnName="SocialMediaLink" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="SocialMediaID" ColumnName="SocialMediaID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
