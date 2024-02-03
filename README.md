@@ -1,5 +1,5 @@
 ## **Portfolio Projesi** <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="24" height="24" />
-Bu proje, Yazılım alanında oluşturdğum portfolio'nun dinamik ve yönetilebilir halidir.
+Bu proje, Yazılım alanında oluşturduğum portfolio'nun dinamik ve yönetilebilir halidir.
 ### Projeye Genel Bakış👁️‍🗨️
 - Kullanıcılar, dinamik bir Portfolyo oluşturabilir ve güncelleyebilir.
 - Portfolyo içeriği, kullanıcı dostu bir arayüzle düzenlenebilir.
