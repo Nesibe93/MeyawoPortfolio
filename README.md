@@ -1,17 +1,16 @@
 ## **Portfolio Projesi** <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="24" height="24" />
-Bu proje, kullanıcıların kişisel özgeçmişlerini oluşturabileceği ve yönetebileceği dinamik bir CV projesidir.Udemy eğitim platformunda Murat Yücedağ hocamız tarafından yayınlanmıştır.
+Bu proje, Yazılım alanında oluşturdğum portfolio'nun dinamik ve yönetilebilir halidir.
 ### Projeye Genel Bakış👁️‍🗨️
-- Kullanıcılar, dinamik bir CV oluşturabilir ve güncelleyebilir.
-- CV içeriği, kullanıcı dostu bir arayüzle düzenlenebilir.
-- Giriş ve yetkilendirme işlemleri, güvenli bir kullanıcı deneyimi sunar.
+- Kullanıcılar, dinamik bir Portfolyo oluşturabilir ve güncelleyebilir.
+- Portfolyo içeriği, kullanıcı dostu bir arayüzle düzenlenebilir.
 - Veritabanı kullanılarak kişisel bilgiler güvenli bir şekilde depolanır.
 #### **`Kullanılan Teknolojiler`**
 + ASP.NET Framework
 + MVC
 + MS Sql Server
-+ Repository Design Pattern
 + Html
 + Css
++ Javascript
 ### Admin Paneli🛠️
 **`Admin Paneli Neler Yapabilir?`**
 - Kullanıcı Yönetimi
