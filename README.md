@@ -17,16 +17,21 @@ Bu proje, Yazılım alanında oluşturdğum portfolio'nun dinamik ve yönetilebi
 - Sayfaları ve içeriği düzenleme yetkisi
 - Veritabanı Yönetimi, Verileri görüntüleme ve düzenleme
 - Genel sistem ayarlarını ve yapılandırmalarını yönetme
-![Adminpaneli1](https://github.com/Nesibe93/MvcCV/assets/125722258/17c5cde9-09e1-4418-8b64-49d191517c80)
-![Adminpaneli2](https://github.com/Nesibe93/MvcCV/assets/125722258/692d7a26-4bb4-4061-967a-9f4658a117bf)
-### <img width="22" height="22" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-home-resume-flaticons-lineal-color-flat-icons.png" alt="external-home-resume-flaticons-lineal-color-flat-icons"/>Anasayfa
-![Default1](https://github.com/Nesibe93/MvcCV/assets/125722258/b7e99bde-6968-41f1-b734-21a9b0673f4b)
-### <img width="22" height="22" src="https://img.icons8.com/tiny-color/16/code.png" alt="code"/>Yetenek
-![default2](https://github.com/Nesibe93/MvcCV/assets/125722258/0ecdc78d-0ed6-45a7-9e1f-211d4601f759)
-### <img width="20" height="20" src="https://img.icons8.com/office/24/diploma.png" alt="diploma"/>Sertifika
-![default3](https://github.com/Nesibe93/MvcCV/assets/125722258/44125299-17b9-4268-9296-ecc535c43a1d)
+![Adminpaneli1](https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/5f0ad581-89cd-48d0-a16b-93779e8cbcca)
+![Adminpaneli2](https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/ea625a23-b8d0-4fd3-b84c-46cd6fd6718a)
+![Adminpaneli3](https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/262b6fae-8c91-4d09-b3f5-f46957eb9bda)
+
+### <img width="22" height="22" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-home-resume-flaticons-lineal-color-flat-icons.png" alt="external-home-resume-flaticons-lineal-color-flat-icons"/>Feature
+![Default1](https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/3fe9ddba-9bc8-4a8c-8d2b-c45e182ee828)
+### <img width="22" height="22" src="https://img.icons8.com/tiny-color/16/code.png" alt="code"/>Hizmetlerim
+![default2](https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/766e98c8-4971-46e2-9440-ef3e9da426ef)
+### <img width="20" height="20" src="https://img.icons8.com/office/24/diploma.png" alt="diploma"/>Projelerim
+![default3](https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/38510576-f224-4204-9318-e918ef101969)
+### <img width="20" height="20" src="https://img.icons8.com/office/24/diploma.png" alt="diploma"/>Referanslarım
+![default4](https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/d0617e7e-c359-418b-ba54-6c7adfce53b0)
 ### <img width="22" height="22" src="https://github.com/Nesibe93/MvcCV/assets/125722258/20e3a820-f95b-41d4-9a11-ea97ff9047f5"/>İletişim
-![default4](https://github.com/Nesibe93/MvcCV/assets/125722258/a70240dc-a9c7-4bfb-9a6d-424be48de3f7)
+![default5](https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/73159e87-643f-476e-acff-65a2eabe1615)
+
 
 
 
