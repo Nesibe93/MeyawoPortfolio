@@ -26,8 +26,7 @@ Bu proje, Yazılım alanında oluşturdğum portfolio'nun dinamik ve yönetilebi
 ### <img width="22" height="22" src="https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/35303ec6-8a66-4244-92fe-1fd1fe2a9124" alt="code"/>Hizmetlerim
 ![default2](https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/766e98c8-4971-46e2-9440-ef3e9da426ef)
 ### <img width="20" height="20" src="https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/28404f72-383e-478e-9504-b0973d571f9f" alt="diploma"/>Projelerim
-![default3](https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/38510576-f224-4204-9318-e918ef101969)![codeicon]()
-
+![default3](https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/38510576-f224-4204-9318-e918ef101969)
 ### <img width="20" height="20" src="https://img.icons8.com/office/24/diploma.png" alt="diploma"/>Referanslarım
 ![default4](https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/d0617e7e-c359-418b-ba54-6c7adfce53b0)
 ### <img width="22" height="22" src="https://github.com/Nesibe93/MvcCV/assets/125722258/20e3a820-f95b-41d4-9a11-ea97ff9047f5"/>İletişim
