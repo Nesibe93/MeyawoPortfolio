@@ -11,18 +11,12 @@ Bu proje, Yazılım alanında oluşturdğum portfolio'nun dinamik ve yönetilebi
 + Html
 + Css
 + Javascript
++ Bootstrap
 ### Admin Paneli🛠️
 **`Admin Paneli Neler Yapabilir?`**
-- Kullanıcı Yönetimi
 - Sayfaları ve içeriği düzenleme yetkisi
 - Veritabanı Yönetimi, Verileri görüntüleme ve düzenleme
 - Genel sistem ayarlarını ve yapılandırmalarını yönetme
-- Email gönderme, güvenlik önlemleri gibi ayarları düzenleme
-> [!IMPORTANT]
-> `Admin paneli için;`
-> ```C#
-> Kullanıcı Adı: Admin
-> Şifre: 1234
 ![Adminpaneli1](https://github.com/Nesibe93/MvcCV/assets/125722258/17c5cde9-09e1-4418-8b64-49d191517c80)
 ![Adminpaneli2](https://github.com/Nesibe93/MvcCV/assets/125722258/692d7a26-4bb4-4061-967a-9f4658a117bf)
 ### <img width="22" height="22" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-home-resume-flaticons-lineal-color-flat-icons.png" alt="external-home-resume-flaticons-lineal-color-flat-icons"/>Anasayfa
