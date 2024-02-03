@@ -13,7 +13,6 @@
         <th>Icon</th>
         <th>Sil</th>
         <th>Güncelle</th>
-        <th>Github Linki</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -22,11 +21,10 @@
             <td>@item.Title</td>
             <td>@item.SocialMediaLink</td>
             <td>@item.Icon</td>
-            <td><a href="#" class="btn btn-danger">Sil</a></td>
-            <td><a href="#" class="btn btn-success">Güncelle</a></td>
-            <td><a href="#" class="btn btn-dark">Github'ta Aç</a></td>
+            <td><a href="/SocialMedia/DeleteSocialMedia/@item.SocialMediaID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/SocialMedia/UpdateSocialMedia/@item.SocialMediaID" class="btn btn-success">Güncelle</a></td>
         </tr>
     }
 </table>
-<a href="/Social/CreateSocialMedia/" class="btn btn-primary">Yeni Sosya Medya</a>
+<a href="/SocialMedia/CreateSocialMedia/" class="btn btn-primary">Yeni Sosyal Medya</a>
 

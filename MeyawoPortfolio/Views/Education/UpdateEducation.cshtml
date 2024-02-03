@@ -1,0 +1,29 @@
+﻿@model MeyawoPortfolio.Models.TblEducation
+@{
+    ViewBag.Title = "UpdateEducation";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+<h2>Eğitim Güncelle</h2>
+<form method="post">
+    <label>Eğitim ID</label>
+    <input type="text" name="EducationID" readonly value="@Model.EducationID" class="table table-bordered" />
+
+    <label>Derece</label>
+    @Html.TextBoxFor(x => x.Degree, new { @class = "table table-bordered" })
+    <br />
+    <label>Üniversite Adı</label>
+    @Html.TextBoxFor(x => x.UniversityName, new { @class = "table table-bordered" })
+    <br />
+    <label>Bölüm Adı</label>
+    @Html.TextBoxFor(x => x.DepartmentName, new { @class = "table table-bordered" })
+    <br />
+    <label>GNO</label>
+    @Html.TextBoxFor(x => x.GPA, new { @class = "table table-bordered" })
+    <br />
+    <label>Mezuniyet Tarihi</label>
+    @Html.TextBoxFor(x => x.GraduationDate, new { @class = "table table-bordered" })
+    <br />
+    <button class="btn btn-info">Eğitimi Güncelle</button>
+</form>
+
+

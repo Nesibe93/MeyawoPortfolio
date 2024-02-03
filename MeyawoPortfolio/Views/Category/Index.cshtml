@@ -3,25 +3,29 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/AdminLayout/_Layout.cshtml";
 }
+<div class="card-block">
+    <div class="card-body">
+        <h2>Programlama dilleri</h2>
+        <br />
+        <br />
+        <table class="table table-bordered">
+            <tr>
+                <th>#</th>
+                <th>Kategori Adı</th>
 
-<h2>Programlama dilleri</h2>
-<table class="table table-bordered">
-    <tr>
-        <th>Kategori ID</th>
-        <th>Kategori Adı</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.CategoryID</td>
+                    <td>@item.CategoryName</td>
 
-    </tr>
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.CategoryID</td>
-            <td>@item.CategoryName</td>
+                    <td><a href="/Category/DeleteCategory/@item.CategoryID" class="btn btn-danger">Sil</a></td>
+                    <td><a href="/Category/UpdateCategory/@item.CategoryID" class="btn btn-success">Güncelle</a></td>
 
-            <td><a href="/Category/DeleteCategory/@item.CategoryID" class="btn btn-danger">Sil</a></td>
-            <td><a href="/Category/UpdateCategory/@item.CategoryID" class="btn btn-success">Güncelle</a></td>
-
-        </tr>
-    }
-</table>
-<a href="/Category/CreateCategory/" class="btn btn-primary">Yeni Programlama Dili</a>
-
+                </tr>
+            }
+        </table>
+        <a href="/Category/CreateCategory/" class="btn btn-primary">Yeni Programlama Dili</a>
+    </div>
+</div>

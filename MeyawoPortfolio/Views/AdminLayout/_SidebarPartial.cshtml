@@ -1,22 +1,22 @@
-﻿<nav id="sidebar">
+﻿<!--<nav id="sidebar">
     <div class="custom-menu">
         <button type="button" id="sidebarCollapse" class="btn btn-primary">
         </button>
     </div>
     <div class="img bg-wrap text-center py-4" style="background-image: url(/Templates/sidebar-09/images/bg_1.jpg);">
         <div class="user-logo">
-            <div class="img" style="background-image: url(/Templates/sidebar-09/images/logo.jpg);"></div>
+            <div class="img" style="background-image: url(/Templates/sidebar-09/images/cvfoto.jpg);"></div>
             <h3>Nesibe Kosanoğlu</h3>
         </div>
     </div>
     <ul class="list-unstyled components mb-5">
         <li class="active">
-            <a href="#"><span class="fa fa-home mr-3"></span> Dashboard</a>
-        </li>
+            <a href="/Statistic/Index/"><span class="fa fa-home mr-3"></span> Dashboard</a>
+        </li>-->
         @*<li>
-            <a href="#"><span class="fa fa-download mr-3 notif"><small class="d-flex align-items-center justify-content-center">5</small></span> Cv'mi İndir</a>
-        </li>*@
-        <li>
+                <a href="#"><span class="fa fa-download mr-3 notif"><small class="d-flex align-items-center justify-content-center">5</small></span> Cv'mi İndir</a>
+            </li>*@
+        <!--<li>
             <a href="/Education/Index/"><span class="fa fa-gift mr-3"></span>Eğitim Hayatım</a>
         </li>
         <li>
@@ -27,11 +27,11 @@
         </li>
         <li>
             <a href="/About/Index/"><span class="fa fa-support mr-3"></span>Hakkımda</a>
-        </li>
+        </li>-->
         @*<li>
-            <a href="/Future/Index/"><span class="fa fa-sign-out mr-3"></span>Öne Çıkanlar</a>
-        </li>*@
-        <li>
+                <a href="/Future/Index/"><span class="fa fa-sign-out mr-3"></span>Öne Çıkanlar</a>
+            </li>*@
+        <!--<li>
             <a href="/Service/Index/"><span class="fa fa-sign-out mr-3"></span>Hizmetlerim</a>
         </li>
         <li>
@@ -42,13 +42,44 @@
         </li>
         <li>
             <a href="/Contact/Index/"><span class="fa fa-sign-out mr-3"></span>iletişim</a>
-        </li>
+        </li>-->
+        @*<li>
+                <a href="#"><span class="fa fa-sign-out mr-3"></span>Çıkış Yap</a>
+            </li>*@
+    <!--</ul>
+
+</nav>-->
+
+    <!-- Sidebar -->
+<div class="sidebar">
+    <a href="#" class="logo">
+        <i class='bx bx-code-alt'></i>
+        <div class="logo-name"><span>Nesibe</span></div>
+    </a>
+   <div class="img text-sm-center"><nav><img style="border-radius:40px; width:60px; height:60px" src="~/Templates/AdminDashboard02/images/cvfoto.jpg" /></nav></div>
+    <ul class="side-menu">
+        <li><a href="/Statistic/Index/"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+        <li><a href="/Default/Index/"><i class='bx'><box-icon name='window-open'></box-icon></i>Siteye Git</a></li>
+        <li><a href="/About/Index/"><i class='bx'><box-icon type='solid' name='book-alt'></box-icon></i>Hakkımda</a></li>
+        <li><a href="/Education/Index/"><i class='bx'><box-icon name='graduation' type='solid'></box-icon></i>Eğitim Hayatım</a></li>
+        <li><a href="/Category/Index/"><i class="bx"><box-icon name='category-alt' type='solid'></box-icon></i>Kategoriler</a></li>
+        <li><a href="/Project/Index/"><i class="bx"><box-icon type='solid' name='file-archive'></box-icon></i>Projelerim</a></li>
+        <li><a href="/Service/Index"><i class='bx bx-group'></i>Hizmetlerim</a></li>
+        <li><a href="/SocialMedia/Index"><i class='bx bx-group'></i>Sosyal Medya</a></li>
+        <li><a href="/Testimonial/Index"><i class='bx bx-group'></i>Referanslarım</a></li>
+        @*<li><a href="/Statistic/Index"><i class='bx'><box-icon name='line-chart-down'></box-icon></i>İstatistikler</a></li>*@
+        <li><a href="/Contact/Index/"><i class='bx'><box-icon name='phone' type='solid'></box-icon></i>İletişim</a></li>
+        <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li>
+    </ul>
+    <ul class="side-menu">
         <li>
-            <a href="#"><span class="fa fa-sign-out mr-3"></span>Ayarlar</a>
-        </li>
-        <li>
-            <a href="#"><span class="fa fa-sign-out mr-3"></span>Çıkış Yap</a>
+            <a href="#" class="logout">
+                <i class='bx bx-log-out-circle'></i>
+                Logout
+            </a>
         </li>
     </ul>
-
-</nav>
+</div>
+    
+    <!-- End of Sidebar -->
+    <!-- Main Content -->

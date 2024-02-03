@@ -3,31 +3,40 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/AdminLayout/_Layout.cshtml";
 }
-
-<h2>Eğitim Listesi</h2>
-<table class="table table-bordered">
-    <tr>
-        <th>Eğitim ID</th>
-        <th>Derece</th>
-        <th>Üniversite Adı</th>
-        <th>Bölüm Adı</th>
-        <th>Genel Not Ortalaması</th>
-        <th>Mezuniyet Tarihi</th>
-        <th>Sil</th>
-        <th>Güncelle</th>
-    </tr>
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.EducationID</td>
-            <td>@item.Degree</td>
-            <td>@item.UniversityName</td>
-            <td>@item.DepartmentName</td>
-            <td>@item.GPA</td>
-            <td>@item.GraduationDate</td>
-            <td><a href="#" class="btn btn-danger">Sil</a></td>
-            <td><a href="#" class="btn btn-success">Güncelle</a></td>
-        </tr>
-    }
-</table>
-<a href="/Education/Index/" class="btn btn-primary">Yeni Eğitim Girişi</a>
+<br />
+<br />
+<br />
+<br />
+<div class="card-block">
+    <div class="card-body">
+        <h2>Eğitim Listesi</h2>
+        <br />
+        <br />
+        <table class="table table-bordered">
+            <tr>
+                <th>Eğitim ID</th>
+                <th>Derece</th>
+                <th>Üniversite Adı</th>
+                <th>Bölüm Adı</th>
+                <th>Genel Not Ortalaması</th>
+                <th>Mezuniyet Tarihi</th>
+                <th>Sil</th>
+                <th>Güncelle</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.EducationID</td>
+                    <td>@item.Degree</td>
+                    <td>@item.UniversityName</td>
+                    <td>@item.DepartmentName</td>
+                    <td>@item.GPA</td>
+                    <td>@item.GraduationDate</td>
+                    <td><a href="/Education/DeleteEducation/@item.EducationID" class="btn btn-danger">Sil</a></td>
+                    <td><a href="/Education/UpdateEducation/@item.EducationID" class="btn btn-success">Güncelle</a></td>
+                </tr>
+            }
+        </table>
+        <a href="/Education/CreateEducation/" class="btn btn-primary">Yeni Eğitim Girişi</a>
+    </div>
+</div>

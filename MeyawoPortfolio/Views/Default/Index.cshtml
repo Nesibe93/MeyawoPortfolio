@@ -44,6 +44,20 @@
     <!-- Meyawo js -->
     <script src="~/Templates/meyawo-1.0.0/assets/js/meyawo.js"></script>
 
+    <script>
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollTopBtn").style.display = "block";
+            }
+            else {
+                document.getElementById("scrollTopBtn").style.display = "none";
+            }
+        };
+        function scrollTopFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>

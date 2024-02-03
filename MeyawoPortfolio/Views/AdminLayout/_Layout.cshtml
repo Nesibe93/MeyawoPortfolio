@@ -8,11 +8,14 @@
 @Html.Partial("~/Views/AdminLayout/_HeaderPartial.cshtml")
 <body>
 
-    <div class="wrapper d-flex align-items-stretch">
-        @Html.Partial("~/Views/AdminLayout/_SidebarPartial.cshtml")
-        <div id="content" class="p-4 p-md-5 pt-5">
-            @RenderBody()
-        </div>
+    @*<div class="wrapper d-flex align-items-stretch">*@
+    @Html.Partial("~/Views/AdminLayout/_SidebarPartial.cshtml")
+    @*<div id="content" class="p-4 p-md-5 pt-5">*@
+
+    <div class="content">
+        @Html.Partial("~/Views/AdminLayout/_NavbarPartial.cshtml")
+        @RenderBody()
+
     </div>
     @Html.Partial("~/Views/AdminLayout/_ScriptPartial.cshtml")
 </body>

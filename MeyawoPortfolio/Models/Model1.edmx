@@ -124,6 +124,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="LastProjectName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="DbMyPortfolioModelStoreContainer">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblAbout" EntityType="Self.TblAbout" Schema="dbo" store:Type="Tables" />
@@ -253,6 +254,7 @@
           <EntitySet Name="TblEducation" EntityType="DbMyPortfolioModel.TblEducation" />
           <EntitySet Name="TblAdminSidebar" EntityType="DbMyPortfolioModel.TblAdminSidebar" />
           <EntitySet Name="TblSocialMedia" EntityType="DbMyPortfolioModel.TblSocialMedia" />
+          <FunctionImport Name="LastProjectName" ReturnType="Collection(String)" />
         </EntityContainer>
         <EntityType Name="TblEducation">
           <Key>
@@ -407,6 +409,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="LastProjectName" FunctionName="DbMyPortfolioModel.Store.LastProjectName" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

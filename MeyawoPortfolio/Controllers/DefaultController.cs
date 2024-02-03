@@ -66,5 +66,9 @@ namespace MeyawoPortfolio.Controllers
             var values = db.TblEducation.ToList();
             return PartialView(values);
         }
+        public ActionResult Modal()
+        {
+            return View();
+        }
     }
 }

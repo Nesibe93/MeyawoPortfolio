@@ -1,0 +1,26 @@
+﻿@model MeyawoPortfolio.Models.TblEducation
+@{
+    ViewBag.Title = "CreateEducation";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Yeni Eğitim Girişi</h2>
+<form method="post">
+    <label>Derece</label>
+    @Html.TextBoxFor(x => x.Degree, new { @class = "table table-bordered" })
+    <br />
+    <label>Üniversite Adı</label>
+    @Html.TextBoxFor(x => x.UniversityName, new { @class = "table table-bordered" })
+    <br />
+    <label>Bölüm Adı</label>
+    @Html.TextBoxFor(x => x.DepartmentName, new { @class = "table table-bordered" })
+    <br />
+    <label>GNO</label>
+    @Html.TextBoxFor(x => x.GPA, new { @class = "table table-bordered" })
+    <br />
+    <label>Mezuniyet Tarihi</label>
+    @Html.TextBoxFor(x => x.GraduationDate, new { @class = "table table-bordered" })
+    <br />
+    <button class="btn btn-info">Eğitimi Kaydet</button>
+</form>
+
