@@ -32,6 +32,8 @@ Bu proje, Yazılım alanında oluşturdğum portfolio'nun dinamik ve yönetilebi
 ### <img width="22" height="22" src="https://github.com/Nesibe93/MvcCV/assets/125722258/20e3a820-f95b-41d4-9a11-ea97ff9047f5"/>İletişim
 ![default5](https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/73159e87-643f-476e-acff-65a2eabe1615)
 
+### <img width="22" height="22" src="https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/2f304682-903d-46db-9215-03a0f3f9a7d5"/>Database Diagram
+![Portfolyodiagram](https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/adeec9d9-3326-481c-b308-b42bd779c832)
 
 
 
